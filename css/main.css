@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EBF2F5;
+  
+}
+
+#mainWrapper {
+  padding-top: 1px;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 995px;
+  height : 100%;
+  min-height: 100vh;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/* search input*/
+#searchWrapper {
+ text-align: center;
+  margin-top: 1em;
+  margin-bottom:  2em;
+}
+#searchInput {  
+ width: 80%; 
+  max-width: 370px;
+  height: 29px;
+  border: 2px;
+   border-radius: 4px;
+  border-style: groove; /*it was inset*/
+  border-color: rgba(0,0,0, 0.2);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(0,0,0,0.6);
+  font-size: 0.8em;
+  
+}
+::-moz-placeholder { /* Firefox 19+ */
+   color: rgba(0,0,0,0.6);
+   font-size: 0.9em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0,0,0,0.6);
+  font-size: 0.9em;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(0,0,0,0.6);
+   font-size: 0.9em;
+}
+
+/*gallery*/
+
+#listOfImages {
+  text-align: center;
+  padding: 0;
+ 
+}
+
+/*thumbnail images in gallery*/
+.image  {
+  list-style: none;
+  margin: 0 auto 3em;
+}
+
+
+@media(max-width:300px) {
+  .image img {
+    width: 100%;
+  }
+}
+
+
+/*
+tablet and desktop display appearance.
+*/
+/*adding two images togather in the gallery*/
+@media(min-width: 500px) {
+ 
+  .image {
+    float: left;
+    width: 40%; 
+    margin-left: 5%;
+    margin-right: 5%; 
+  }
+  .image img{
+    width: 100%;  
+  }
+  
+  .clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+}
+/*adding three images togather in the gallery*/
+@media(min-width: 700px) {
+  .image {
+    width: 30%;
+    margin-left: 1.66%;
+    margin-right: 1.66%;
+  }
+}
+
+/*adding four images togather in the gallery*/
+@media(min-width: 900px) {
+  .image {
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+
+/**************************************
+light-box styles
+**************************************/
+ div.rebox {
+    width: 80%;
+    left: 10%;  
+   background-color: rgba(45,47,48,0.97);
+} 
+a.rebox-button {
+  background: none;
+  opacity: 1;
+  font-size: 30px;
+  height: 50px;
+}
+
+a.rebox-prev {
+  left: 2%;
+}
+a.rebox-next {
+  right: 2%;
+}
+
+div.rebox-contents {
+  width: 70%;
+  left: 15%;
+}
+
+div.rebox-contents img.rebox-content {
+  border: none;
+  box-shadow: none;
+}
+
+div.rebox-caption {
+   background: none; 
+   bottom: 5%;
+   left: 10%; 
+   width: 80%;
+}
+
+div.rebox-caption p {
+  
+  max-width: 600px; 
+  font-size: 14px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+/*tablet version of light-box*/
+@media (min-width: 769px) {
+  a.rebox-button {
+  font-size: 50px;
+}
+  a.rebox-prev {
+  left: 7%;
+}
+a.rebox-next {
+  right: 7%;
+}
+
+ div.rebox-caption p {
+  width: 70%;
+} 
+  
+}
