@@ -1,5 +1,5 @@
 # interactive-photo-gallery
-the photos and layout adjusts for mobile-friendly experience.
+the photos and layout adjust for mobile-friendly experience.
 It has also a jQuery plugin for a lightbox. This  includes the following functionality and features
 The ability to click on thumbnail images in the gallery and view them in a lightbox.
 A background overlay that appears and covers the entire window when displaying a larger image.
